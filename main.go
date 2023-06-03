@@ -27,10 +27,10 @@ func main() {
 	//wk := pdfGenerator.NewWkHtmlToPdf("tmp")
 
 	dataHTML := Data{
-		Name:           "Giovanni",
-		LastName:       "Carvalho",
+		Name:           "Marcos",
+		LastName:       "Ferreira",
 		Vencimento:     "30/06/2023",
-		ValorDocumento: 1290.86,
+		ValorDocumento: 924.78,
 		NumeroDoc:      "34567890",
 		LocalPagamento: "Agencia caixa",
 		AGCCDAC:        "078/4353-0",
@@ -47,15 +47,13 @@ func main() {
 
 	fmt.Println("html gerado: ", htmlGenerated)
 
-	fmt.Println(htmlGenerated)
-
 	htmlLog, err := h.Create("templates/log.html", dataHTML)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	fmt.Println(htmlLog)
+	fmt.Println("log html gerado: ", htmlLog)
 
 	filePDFName := htmlLog
 
