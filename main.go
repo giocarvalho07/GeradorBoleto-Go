@@ -27,8 +27,8 @@ func main() {
 	//wk := pdfGenerator.NewWkHtmlToPdf("tmp")
 
 	dataHTML := Data{
-		Name:           "Marcos",
-		LastName:       "Ferreira",
+		Name:           "Giovanni",
+		LastName:       "Carvalho",
 		Vencimento:     "30/06/2023",
 		ValorDocumento: 924.78,
 		NumeroDoc:      "34567890",
